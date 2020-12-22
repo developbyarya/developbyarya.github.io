@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&family=Roboto:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+nav{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    padding: 30px 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .nav-left{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    
+}
+nav .nav-left .nav-title {
+    padding: 0 20px 0 0;
+}
+nav .nav-left ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-left: 100px;
+}
+nav .nav-left li{
+    list-style: none;
+    text-align: center;
+}
+nav .nav-left li:hover{
+    border-bottom: 2px solid #1B0A42;
+    margin-bottom: -5px;
+}
+nav .nav-left li a{
+    text-decoration: none;
+    color: #1B0A42;
+    font-size: 16px;
+    letter-spacing: 2%;
+    line-height: 24px;
+    text-align: center;
+}
+nav .nav-btn a{
+margin: 0 10px;
+text-decoration: none;
+color: #1B0A42;
+font-size: 16px;
+padding-bottom: 2px;
+}
+nav .nav-btn a:hover:nth-child(1){
+    border-bottom:2px solid #1B0A42 ;
+}
+nav .nav-btn a:nth-child(2){
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    line-height: 24px;
+    letter-spacing: 2%;
+}
+nav .nav-btn a:nth-child(2):hover{
+    background-color: #7daa00;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    align-items: center;
+}
+section .left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 100px;
+}
+section .left h1{
+    font-family:'Ramaraja',serif ;
+    font-size: 64px;
+    color: #1B0A42;
+    letter-spacing: 2%;
+    line-height: 72px;
+    text-transform: capitalize;
+
+}
+section .left p{
+    font-family: 'roboto', sans-serif;
+    letter-spacing: 2%;
+    line-height: 32px;
+    color: #9A9A9A;
+    margin-top: 20px;
+    font-size: 18px;
+}
+section .left a.btn{
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    line-height: 24px;
+    letter-spacing: 2%;
+    width: 30%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+}
+section .right img#main-pic{
+    transition: all .5s ease-in-out;
+}
+section .left a.btn:hover{
+    background-color: #7daa00;
+}
+
+.theme button{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: block;
+    border: none;
+    margin: 5px 0;
+}
+.theme-cont{
+    position: sticky;
+}
+.theme-cont .theme{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-left: 20px;
+}
+.theme-cont .theme .option{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    transform: translateY(-250px);
+}
+.theme-cont .theme .option.active{
+    display: flex;
+}
+
+.theme-cont .theme button#chooser{
+    position: absolute;
+    border: 2.5px solid white;
+    box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.5);
+}
+.theme button[value=green],[data-color=green]{
+    background-color: #A3DC00;
+}
+.theme button[value=blue],[data-color=blue]{
+    background-color: #4F56F1;
+}
+.theme button[value=purple],[data-color=purple]{
+    background-color: #824FF1;
+}
+.theme button[value=red],[data-color=red]{
+    background-color: #FC569A;
+}
+.theme button[value=light-blue],[data-color=light-blue]{
+    background-color: #33A2E0;
+}

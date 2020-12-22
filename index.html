@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Medi.</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="nav-title">
+                <a href="#"><img src="./pic/logo/green.png" alt="logo" class="nav-logo" id="nav-logo"></a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-btn">
+            <a href="#">Sign In</a>
+            <a href="#" id="nav-signUp" data-color="green">Sign Up</a>
+        </div>
+    </nav>
+    <section>
+        <div class="left">
+            <h1>Stay Productive &
+                Work Remotely</h1>
+            <p>The key to work-from-home success is to create an 
+                enviroment that allows you to focus on the tasks at hand. Whether you are working from home for the first time.</p>
+            <a href="#" class="btn" id="sec-btn" data-color="green">Learn More</a>
+        </div>
+        <div class="right">
+            <img src="./pic/green.png" alt="picture" width="600" id="main-pic">
+        </div>
+    </section>
+    <div class="theme-cont">
+        <div class="theme">
+            <div class="option" id="option">
+                <button id="green" value="green" onclick="changeToggleContent('green')"></button>
+                <button id="red" value="red" onclick="changeToggleContent('red')"></button>
+                <button id="blue" value="blue" onclick="changeToggleContent('blue')"></button>
+                <button id="purple" value="purple" onclick="changeToggleContent('purple')"></button>
+                <button id="light-blue" value="light-blue" onclick="changeToggleContent('light-blue')"></button>
+            </div>
+            <button id="chooser" value="green" onclick="Toggle()"></button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
