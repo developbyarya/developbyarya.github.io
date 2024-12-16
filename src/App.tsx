@@ -1,4 +1,3 @@
-import { Separator } from '@radix-ui/react-separator';
 import './App.css'
 import TopHeader from "./components/compound/top-header";
 import Projects from './components/compound/projects';

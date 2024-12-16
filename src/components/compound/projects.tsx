@@ -40,7 +40,7 @@ const ReadMoreText = ({ text, maxLength = 220 }: {text: string, maxLength: numbe
 
   return (
     <div className="">
-      <p className={`text-gray-700 text-justify relative text-left text-base transition-all `}>
+      <p className={`text-gray-700 text-justify relative  text-base transition-all `}>
         <span className={` block ${isExpanded ? 'max-h-full' : 'max-h-20 md:max-h-60 overflow-hidden'}`}>
             {displayedText} </span>
             {displayedText.length > maxLength && 

@@ -8,7 +8,7 @@ import {
   TooltipTrigger,
 } from "../ui/tooltip";
 import { cn } from "@/lib/utils";
-import { Button, buttonVariants } from "../ui/button";
+import { buttonVariants } from "../ui/button";
 import { Separator } from "../ui/separator";
 import profile from "@/assets/profile.jpg";
 
